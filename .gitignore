@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+frontend/ .env
+serverside/ .env
+frontend/ .env.local
+serverside/ .env.local
+frontend/ .env.*.local
+serverside/ .env.*.local
