@@ -5,7 +5,7 @@ const [connected,setconnected]=useState(false)
 const [username,setusername] = useState()
 const [password,setpassword] = useState()
 useEffect(()=>{
-  fetch(`${process.env.REACT_APP_API_URL}/api/authcheck`,{headers: {
+  fetch(`${process.env.REACT_APP_API_URL}/api/Admin/authcheck`,{headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   },credentials: 'include'}).then((res)=>{if (res.ok )setconnected(true);}).catch((e)=>{console.log(e)});
