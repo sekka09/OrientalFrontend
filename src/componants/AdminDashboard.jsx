@@ -43,7 +43,7 @@ useEffect(()=>{
           fetch(`${process.env.REACT_APP_API_URL}/api/Admin/login`,{headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
-          },credentials: 'include',method : 'post',body : JSON.stringify({name : username , password : password})}).then(()=>{fetch(`${process.env.REACT_APP_API_URL}/api/authcheck`,{headers: {
+          },credentials: 'include',method : 'post',body : JSON.stringify({name : username , password : password})}).then(()=>{fetch(`${process.env.REACT_APP_API_URL}/api/Admin/authcheck`,{headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           },credentials: 'include'}).then((res)=>{if (res.ok )setconnected(true);}).catch((e)=>{console.log(e)});}).catch((e)=>{console.log(e)})
